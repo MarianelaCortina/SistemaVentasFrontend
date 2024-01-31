@@ -1,0 +1,29 @@
+table{
+    width: 100%;
+}
+.mat-form-field{
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Medias queries */
+@media (max-width: 900px) {
+    table {
+        width: 95%;
+    }
+    .mat-form-field {
+        font-size: 12px; 
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    table {
+        width: 100%; 
+        font-size: 8px; 
+    }
+    .mat-form-field {
+        font-size: 8px; 
+        width: 100%;
+    }
+}
