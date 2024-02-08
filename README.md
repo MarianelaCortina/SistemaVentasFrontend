@@ -1,7 +1,6 @@
 *Readme en construcción, ya que me encuentro realizando aún la IG del Ssitema de venta
 
-El Sistema de Ventas cuenta con un Login para poder iniciar sesión:
-![Login_Sistema_Ventas](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/a3738059-4efe-4659-9f13-68325ddaf8e1)
+El Sistema de Ventas cuenta con un Login para poder iniciar sesión
 
 En el Home se podrá visualizar:
 
