@@ -8,12 +8,15 @@ import { LoginComponent } from './Components/login/login.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { SharedModule } from './Reutilizable/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormatoDecimalPipe } from './Components/layout/Pages/historial-venta/decimal.pipe';
+import { HistorialVentaComponent } from './Components/layout/Pages/historial-venta/historial-venta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    LayoutComponent
+    LayoutComponent,
+    FormatoDecimalPipe
   ],
   imports: [
     BrowserModule,
