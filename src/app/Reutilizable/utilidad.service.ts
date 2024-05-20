@@ -25,7 +25,6 @@ guardarSesionUsuario(usuarioSesion: Sesion){
 obtenerSesionUsuario(){
   const dataCadena = localStorage.getItem("usuario");
   const usuario = JSON.parse(dataCadena!);
-
   return usuario;
 }
 

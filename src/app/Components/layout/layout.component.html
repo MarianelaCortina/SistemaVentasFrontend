@@ -4,6 +4,15 @@
             <mat-icon>menu</mat-icon>
         </button>
         <h1>Sistema de Ventas</h1>
+
+        <span style="flex: 1 1 auto;"></span>
+        <label for="" style="font-size:14px; margin-right:20px;">
+            {{correoUsuario}} | {{rolUsuario}}
+        </label>
+        <button mat-icon-button (click)="cerrarSesion()">
+            <mat-icon>logout</mat-icon>
+        </button>
+
         
     </mat-toolbar-row>
 </mat-toolbar>
@@ -11,7 +20,25 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav opened="true" mode="side" style="width: 300px;">
         <mat-nav-list>
-            <mat-list-item color="accent" routerLink="/pages/dashboard">
+
+            <mat-list-item *ngFor="let menu of listaMenu" [routerLink]="menu.url">
+                <mat-icon matListItemIcon>{{menu.icono}}</mat-icon> 
+                <div mat-line>{{menu.nombre}}</div>
+            </mat-list-item>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 100vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- 
+
+    <mat-list-item color="accent" routerLink="/pages/dashboard">
                 <mat-icon matListItemIcon>dashboard</mat-icon> 
                 <div mat-line>DashBoard</div>
             </mat-list-item>
@@ -36,19 +63,4 @@
                 <div mat-line>Historial Ventas</div>
             </mat-list-item>
 
-            <mat-list-item routerLink="/pages/reportes">
-                <mat-icon matListItemIcon>receipt</mat-icon> 
-                <div mat-line>Reportes</div>
-            </mat-list-item>
-
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <div style="height: 100vh;">
-            <router-outlet></router-outlet>
-        </div>
-    </mat-sidenav-content>
-</mat-sidenav-container>
-
-
-
+ -->

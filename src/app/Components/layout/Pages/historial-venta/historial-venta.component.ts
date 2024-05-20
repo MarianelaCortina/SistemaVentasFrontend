@@ -83,7 +83,40 @@ export class HistorialVentaComponent implements OnInit, AfterViewInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.datosListaVenta.filter = filterValue.trim().toLocaleLowerCase();
   }
+  
+  buscarVentas(){
+    let _fechaInicio: string = "";
+    let _fechaFin: string = "";
 
+    if(this.formularioBusqueda.value.buscarPor === "fecha"){
+      _fechaInicio = moment(this.formularioBusqueda.value.fechaInicio).format('DD/MM/YYYY');
+      _fechaFin = moment(this.formularioBusqueda.value.fechaFin).format('DD/MM/YYYY');
+
+      if(_fechaInicio === "Invalid date" || _fechaFin === "Invalid date"){
+        this._utilidadService.mostrarAlerta("Debe ingresar ambas fechas", "Oops!")
+        return;
+      }
+    }
+    this._ventaService.historial(
+      this.formularioBusqueda.value.buscarPor,
+      this.formularioBusqueda.value.numero,
+      _fechaInicio,
+      _fechaFin
+    ).subscribe({
+      next: (data) =>{
+
+        if(data.status)
+          this.datosListaVenta = data.value;
+        else
+          this._utilidadService.mostrarAlerta("No se encontraron datos", "Oops!");
+
+      },
+      error:(e)=>{}
+    })
+
+  }
+
+/* 
   buscarVentas(){
     let _fechaInicio: string = "";
     let _fechaFin: string = "";
@@ -120,7 +153,7 @@ export class HistorialVentaComponent implements OnInit, AfterViewInit {
       error:(e)=>{}
     })
 
-  }
+  } */
 
   verDetalleVenta(_venta: Venta){
     this.dialog.open(ModalDetalleVentaComponent,{
