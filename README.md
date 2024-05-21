@@ -1,6 +1,11 @@
-*Readme en construcción, ya que me encuentro realizando aún la IG del Ssitema de venta
+
+![Dashboard-Admin](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/aa9e5760-db2c-415f-88b4-06d0e7ba4b09)
+
 
 El Sistema de Ventas cuenta con un Login para poder iniciar sesión
+
+![Login](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/620aa3dc-b950-41d3-b007-9f0434145656)
+
 
 En el Home se podrá visualizar:
 
