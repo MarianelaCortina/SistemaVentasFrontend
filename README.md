@@ -1,6 +1,7 @@
 El Sistema de Ventas, lo realizé utilizando Angular versión 16.
 
-![Dashboard-Admin](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/aa9e5760-db2c-415f-88b4-06d0e7ba4b09)
+![Dashboard-Admin](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/738e41f0-5b18-4749-96ae-29568b373613)
+
 
 Comandos usados en Sistema de venta:
 
