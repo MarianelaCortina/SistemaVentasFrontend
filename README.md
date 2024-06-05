@@ -1,4 +1,4 @@
-El Sistema de Ventas, lo realizé utilizando Angular versión 16.
+El Sistema de Ventas, lo realicé utilizando Angular versión 16.
 
 ![Dashboard-Admin](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/738e41f0-5b18-4749-96ae-29568b373613)
 
