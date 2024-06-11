@@ -159,7 +159,7 @@ export class HistorialVentaComponent implements OnInit, AfterViewInit {
     this.dialog.open(ModalDetalleVentaComponent,{
       data:_venta,
       disableClose:true,
-      width:'700'
+      width:'500'
     })
   }
 

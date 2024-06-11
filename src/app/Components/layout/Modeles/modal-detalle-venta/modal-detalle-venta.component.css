@@ -1,3 +1,36 @@
 table {
     width: 100%;
 }
+
+@media (max-width: 480px) {
+
+    mat-dialog-content {
+        width: 100%;
+        margin-right: 10%;
+    }
+    mat-grid-list{
+        margin-right: 20%; 
+    }
+
+    mat-form-field {
+        width: 100%;
+       
+    }
+/* 
+    table {
+        font-size: 0.8em;
+        width: 100%;
+    } */
+    
+    .mat-elevation-z2 {
+        overflow-x: auto;
+        width: 50%;
+        margin-right: 20%;
+    } 
+
+    button mat-raised-button{
+        margin-right: 50%;
+        align-content: center !important; 
+    }
+}
+
