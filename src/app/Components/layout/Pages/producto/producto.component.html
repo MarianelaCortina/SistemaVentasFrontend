@@ -1,14 +1,14 @@
-<h1 style="margin:20px 0px 0px 40px">Productos</h1>
+<h1 class="title">Productos</h1>
 
-<mat-card style="margin:20px 40px 40px 40px;padding:initial;">
+<mat-card class="card-container">
 
     <mat-card-title>
-        <button mat-raised-button color="primary" style="margin:20px" (click)="nuevoProducto()">
+        <button mat-raised-button color="primary" class="nuevo-producto-btn" (click)="nuevoProducto()">
             <mat-icon mat-list-icon>add</mat-icon>Nuevo Producto
         </button>
     </mat-card-title>
 
-    <mat-divider style="padding:10px 20px;"></mat-divider>
+    <mat-divider class="divider"></mat-divider>
 
     <mat-card-content class="dashboard-card-content">
 
@@ -17,7 +17,7 @@
             <input matInput (keyup)="aplicarFiltroTabla($event)" #input>
         </mat-form-field>
 
-        <div class="mat-elevation-z2" #card>
+        <div class="table-container mat-elevation-z2" #card>
             <table mat-table [dataSource]="dataListaProductos">
 
                 <ng-container matColumnDef="nombre">
