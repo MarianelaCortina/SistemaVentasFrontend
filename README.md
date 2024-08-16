@@ -44,7 +44,8 @@ Menú Historial de Ventas: Que muestra un listado de ventas, que se puede buscar
 Menú Reportes: muestra toda la información de las ventas, que se puede buscar por rango de fechas y descargar el reporte en formato Excel.
 
 
-![image](https://github.com/MarianelaCortina/SistemaVentasFrontend/assets/73797352/3a23684d-4942-4ef4-acda-200fa1344241)
+![Admin-pantalla-Usuarios](https://github.com/user-attachments/assets/fda5e9f7-dc13-4014-ab24-19f7f36c8694)
+
 
 
 
